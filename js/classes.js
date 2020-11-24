@@ -20,6 +20,9 @@ class Cookies extends Torta{
     }
 }
 
+var cabecera = document.getElementById('cabecera')
+cabecera.innerText = 'hay mucha variedad de tortas'
+cabecera.style.fontSize = '80px'
 
 class Carrito{
     constructor(){
@@ -41,6 +44,26 @@ class Carrito{
         console.log('Total de tu compra $ ' + this.calcTotal())
     }
 }
+
+var tortaList = [];
+
+function addTorta (tnombre, tporciones){
+    var newTorta ={
+        id : tnombre,
+        prociones : tporciones
+    };
+    tortaList.push(newTorta);
+}
+document.querySelector('btnAceptar').addEventListener('click', aceptaTorta);
+
+function aceptaTorta (){
+    var tnombre =document.querySelector('txtnombretorta').value,
+    var tporciones =document.querySelector('txtporciones').value;
+
+    addTorta(tnombre,porciones);
+} 
+
+
 const torta1 = new Torta ('lemonpie', 500, 16);
 const cookie1 =new Cookies ('luna', 50 , 10, ['naranja', 'limon'])
 

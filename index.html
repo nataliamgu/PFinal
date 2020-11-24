@@ -9,7 +9,7 @@
     <script defer src="/js/classes.js"></script>
 </head>
 <body>
-    <header class="cabecera">
+    <header id="cabecera">
         <div class="topnav">
             <a href="#cookies">COOKIES</a>
             <a href="#tortas">TORTAS</a>
@@ -26,10 +26,12 @@
             <a name="tortas" id="tortas"></a>
             <a href="#" class="cta">TORTAS</a>
         </div>
-        <img src="/img/lemonpie.jpg" alt="lemonpie">              
+        <img src="/img/lemonpie.jpg" alt="lemonpie">  
+            <p>Seleccioná torta:  <input type="text" name="nombretorta">
+            Cantidad de porciones:  <input type="text" name="porciones">
+              <input type="submit" value="Aceptar"></Cantidad> </p>   
         <img src="/img/lemonpie.jpg" alt="brownie">  
         <img src="/img/lemonpie.jpg" alt="cheesecake">
-        
     </section>
     <div class="modal-contenedor">
         <div class="modal modal-cerrar">
@@ -44,7 +46,8 @@
         <div class="contenedorf">
             <a name="contacto" id="contacto"></a>
             <h2 class="titulo">CONTACTO</h2>
-            <button class="email"><img src="#" alt="Mail">Mail</button>
+            <input type="text" id="registro" placeholder="Registrate aquí">
+            <button class="Email" id="mail"><img src="#" alt="mail"></button>
         </div>
     </footer>
 </body>
